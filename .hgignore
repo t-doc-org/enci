@@ -1,0 +1,8 @@
+syntax: glob
+*.orig
+__pycache__
+
+syntax: regexp
+^_[^/]*/
+^docs/_build/
+^tmp/
