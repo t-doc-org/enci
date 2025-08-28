@@ -4,3 +4,8 @@
 # Cours d'informatique Iliya Enchev
 
 Ce site Web fait office de support de cours pour les cours d'informatique de Iliya Enchev...
+
+```{toctree}
+:maxdepth: 2
+1GY/index
+2GY/index
