@@ -5,7 +5,22 @@ solutions: dynamic
 
 ## Qu'est-ce qu'une entrée utilisateur ?
 
-Dans les programmes que nous avons écrit jusqu'à présent, l'utilisateur n'avait jamais son mot à dire sur ce qu'il se passait : il cliquait sur *Play* et voyait le résultat s'afficher. Toutefois, dans la grande majorité des programmes, l'utilisateur doit pouvoir **intéragir** avec le programme avec son clavier, sa souris, sa manette de jeu, son microphone, etc. Toutes ces intéractions que l'utilisateur peut avoir avec le programme **durant son exécution** sont appelées des entrées utilisateur. Dans ce cours, nous n'allons traiter qu'un seul type d'entrée utilisateur : l'écriture de texte au clavier.
+<!--Dans les programmes que nous avons écrit jusqu'à présent, l'utilisateur n'avait jamais son mot à dire sur ce qu'il se passait : il cliquait sur *Play* et voyait le résultat s'afficher. Toutefois, dans la grande majorité des programmes, l'utilisateur doit pouvoir **intéragir** avec le programme avec son clavier, sa souris, sa manette de jeu, son microphone, etc. Toutes ces intéractions que l'utilisateur peut avoir avec le programme **durant son exécution** sont appelées des entrées utilisateur. Dans ce cours, nous n'allons traiter qu'un seul type d'entrée utilisateur : l'écriture de texte au clavier.
+-->
+Dans les programmes que nous avons écrits jusqu'à présent, nous avons toujours le contrôle, car si nous voulons modifier le résultat du programme, nous pouvons réécrire le code. Par exemple, pour modifier le résultat final de certains calculs, nous pouvons modifier la valeur des variables utilisées et réexécuter le programme.
+À partir de maintenant, nous distinguerons le créateur et l'utilisateur d'un programme, même si la plupart du temps, vous jouerez les deux rôles simultanément.
+
+Le créateur du programme est celui qui écrit le code, qui sait ce qui se passe dans le programme et qui comprend Python (dans notre cas).
+L'utilisateur d'un programme est celui qui l'exécute (clique sur le bouton « Exécuter ») et l'utilise. Il peut donc ne pas être en mesure de modifier le code, pour diverses raisons. Tout comme lorsque vous jouez à un jeu vidéo, vous êtes l'utilisateur ; vous n'avez pas accès au code source, et même si vous y aviez accès, vous ne pourriez probablement pas le modifier de manière significative.
+
+Parfois, l'utilisateur souhaite réexécuter un programme et adapter son exécution afin d'obtenir un résultat différent. Il souhaite **interagir** avec le programme pendant son exécution. L'interaction avec les programmes se fait par le biais de différentes entrées, comme la saisie de texte et de chiffres.
+
+```{image} images/O8VQ5Dm.png
+:width: 50%
+:alt: Schéma d'un programme
+:align: center
+```
+Source: https://imgur.com/how-programmers-see-users-O8VQ5Dm
 
 ## La fonction input
 
