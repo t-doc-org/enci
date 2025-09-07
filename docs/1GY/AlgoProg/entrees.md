@@ -15,12 +15,14 @@ L'utilisateur d'un programme est celui qui l'exécute (clique sur le bouton « E
 
 Parfois, l'utilisateur souhaite réexécuter un programme et adapter son exécution afin d'obtenir un résultat différent. Il souhaite **interagir** avec le programme pendant son exécution. L'interaction avec les programmes se fait par le biais de différentes entrées, comme la saisie de texte et de chiffres.
 
-```{image} images/O8VQ5Dm.png
+```{figure} images/O8VQ5Dm.png
 :width: 50%
-:alt: Schéma d'un programme
 :align: center
-```
+:alt: How users see programmers and vice versa.
+
 Source: https://imgur.com/how-programmers-see-users-O8VQ5Dm
+```
+
 
 ## La fonction input
 
