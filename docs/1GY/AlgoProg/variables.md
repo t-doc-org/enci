@@ -116,7 +116,7 @@ Afin de bien comprendre l'exécution d'un programme, nous allons utiliser un tab
   | 5 | 20| 30| 40| 400|
 ````
 
-<!-- ## Opérateurs d'affectation combinée
+## Opérateurs d'affectation combinée (facultatif pour l'instant)
 Les opérateurs d'affectation combinée permettent de modifier la valeur des variables avec une notation simplifiée. Il existe pour tous les opérateurs mathématiques, voici les principaux.
 
 | Opérateur | Exemple | Équivalent à |
@@ -125,7 +125,7 @@ Les opérateurs d'affectation combinée permettent de modifier la valeur des var
 | `-=`        | `x -= 6`  | `x = x - 6`    |
 | `*=`       | `x \*= 6` | `x = x * 6`    |
 | `/=`        | `x /= 6`  | `x = x / 6`    |
--->
+
 ## Exercices
 ### Exercice {num1}`exercice`
 
