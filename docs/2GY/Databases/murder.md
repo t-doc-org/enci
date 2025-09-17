@@ -1,3 +1,9 @@
+<!-- Copyright 2025 Maxime Jan <maxime.jan@edufr.ch> -->
+<!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
+
+```{metadata}
+solutions: dynamic
+```
 La base de données provient de [SQL Mysteries](https://github.com/NUKnightLab/sql-mysteries/tree/master), Joon Park & Cathy He CC- BY-SA 4.0
 
 
@@ -39,7 +45,17 @@ Quand vous aurez trouvé le coupable, vérifiez votre solution en bas de la page
 ```
 
 ```{quiz}
+{input}`Jeremy Bowers`
+Le meurtrier est :
+
+```
+
+
+## Le commanditaire
+Si vous avez trouvé le meurtrier, félicitations ! Toutefois, bien que vous ayez trouvé la personne ayant commis le meurtre, ce n'est pas elle qui l'a commandité. Pour trouver le cerveau derrière cette opération, allez lire le ce que le meurtrier raconte dans son interrogatoire de la table `interview`.
+
+```{quiz}
 {input}`Miranda Priestly`
-Le coupable est :
+Le commanditaire est :
 
 ```

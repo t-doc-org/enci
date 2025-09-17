@@ -1,7 +1,9 @@
-% Adapté du cours de Caroline Blank <caro@c-space.org>
-% Copyright 2025 Maxime Jan <maxime.jan@edufr.ch>
-% SPDX-License-Identifier: CC-BY-NC-SA-4.0
+<!-- Copyright 2025 Maxime Jan <maxime.jan@edufr.ch> -->
+<!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
 
+```{metadata}
+solutions: dynamic
+```
 # SQL - Créer et insérer
 
 Les bases de données relationnelles peuvent être créées et manipulées grâce au langage **SQL** (Structured Query Language). Il ne s'agit pas d'un langage de programmation, mais d'un langage de requête permettant d'influer directement sur la base de données en créant des tables, insérant des données, et en y recherchant des informations.
@@ -11,7 +13,7 @@ Pour exemplifier la création de tables et l'insertion de données, la base de d
 
 ```{image} images/biblio_schema.png
 :width: 75%
-:alt: Schéma relationnel de la base de données des films
+:alt: Schéma relationnel
 :align: center
 ```
 
@@ -27,7 +29,7 @@ Les types de données peuvent être les suivants :
 - `INTEGER` pour un nombre entier
 - `REAL` pour un nombre réel
 - `TEXT` pour du texte
-- `DATE` pour une date
+- `DATE` pour une date au format `AAAA-MM-JJ`
 
 Finalement, on précise la clef primaire avec `PRIMARY KEY` suivi de parenthèses entre lesquelles on précise l'attribut devant faire office de clef primaire.
 
@@ -38,9 +40,9 @@ CREATE TABLE Livre (
     titre TEXT,
     auteur TEXT,
     date_pub DATE,
-    isbn INTEGER,
+    numero_isbn INTEGER,
     prix REAL,
-    PRIMARY KEY(isbn)
+    PRIMARY KEY(numero_isbn)
 );
 
 ```
@@ -109,18 +111,18 @@ select * from Emprunt;
 ## Insertion de données
 
 Pour insérer une ligne dans une table, il faut utiliser l'instruction
-`INSERT INTO ... VALUES ...`. Après `INSERT INTO`, il faut préciser le nom de la table dans laquelle nous souhaitons ajoutons une ligne, ainsi que les noms de colonnes à remplir. Nous ajoutons ensuite le mot-clef `VALUES` et une paire de parenthèses entre lesquelles nous indiquons
-les valeurs à insérer dans chaque colonne. L'ordre des valeurs doit être le même que celui établit plus tôt dans la requête.
+`INSERT INTO ... VALUES ...`. Après `INSERT INTO`, il faut préciser le nom de la table dans laquelle nous souhaitons ajoutons une ligne, ainsi que les colonnes à remplir. Nous ajoutons ensuite le mot-clef `VALUES` et une paire de parenthèses entre lesquelles nous indiquons
+les valeurs à insérer dans chaque colonne. L'ordre des valeurs doit être le même que celui établi plus tôt dans la requête.
 
-Les valeurs de type `TEXT` doivent être entre guillemets, et la séparation entre les unités et les décimales d'une valeur `REAL` se fait avec un point.
+Les valeurs de type `TEXT` et `DATE` doivent être entre guillemets simples, et la séparation entre les unités et les décimales d'une valeur `REAL` se fait avec un point.
 
 ```{exec} sql
 :after: sql-livre
 :name: sql-livre-insert1
 :then: sql-livre-select
 :editor:
-INSERT INTO Livre(titre, auteur, date_pub, isbn, prix) VALUES
-('La Vérité sur l`Affaire Harry Québert', 'Joël Dicker', 2012, 9782877068161, 23.95);
+INSERT INTO Livre(titre, auteur, date_pub, numero_isbn, prix)
+VALUES ('La Vérité sur l`Affaire Harry Québert', 'Joël Dicker', '2012-03-01', 9782877068161, 23.95);
 ```
 
 Lorsqu'on insère des données dans une table contenant une clef primaire qui a été définie avec `AUTOINCREMENT`, on peut omettre sa valeur et SQL se charge de l'attribuer automatiquement.
@@ -131,10 +133,9 @@ Lorsqu'on insère des données dans une table contenant une clef primaire qui a 
 :name: sql-user-insert1
 :then: sql-user-select
 :editor:
-INSERT INTO Utilisateur(nom, prenom, role) VALUES
-('Jan', 'Maxime', 'enseignant');
-INSERT INTO Utilisateur(nom, prenom, role) VALUES
-('Queloz', 'Aurélien', 'élève');
+INSERT INTO Utilisateur(nom, prenom, role) VALUES ('Jan', 'Maxime', 'enseignant');
+
+INSERT INTO Utilisateur(nom, prenom, role) VALUES ('Queloz', 'Aurélien', 'élève');
 ```
 
 ## Exercices
@@ -249,7 +250,7 @@ VALUES('Young Boys', 'Giorgio Contini', 77900000);
 :then: select-equipe
 CREATE TABLE Equipe(
     nom TEXT,
-    président TEXT,
+    entraineur TEXT,
     budget REAL,
     PRIMARY KEY(nom)
 )
