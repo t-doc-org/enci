@@ -10,7 +10,7 @@ Téléchargez la [base de données](university.db) d'une université et ouvrez l
 
 ```{role} input(quiz-input)
 :right: width: 18rem; clear: right;
-:check: remove-whitespace split lowercase
+:check: split lowercase
 ```
 
 ```{quiz}
@@ -25,8 +25,8 @@ Téléchargez la [base de données](university.db) d'une université et ouvrez l
     Quels sont les deux cours donnés en R201 ?
 5.  {input}`Condensed matter physics`
     Quel cours commence à 14h en salle R403 ?
-6.  {input}`40`
-    Quel cours commence à 14h en salle R403 ?
+6.  {input}`28`
+    Combien d'étudiants sont inscrits au cours  « Relativity » ?
 7.  {input}`36`
     Combien d’étudiants en année « Freshman » (FR) étudient soit la physique,
     soit les maths ?
@@ -42,3 +42,8 @@ Téléchargez la [base de données](university.db) d'une université et ouvrez l
     Combien d’élèves ont entre 17 et 20 ans (y compris) et sont en années « FR »
     ou « SO » ?
 ```
+<!-- pour 7 select count(*) from student
+join enrolled on student.SNUM = enrolled.SNUM
+where student.YEAR = 'FR'
+and cname like '%math%'
+or cname like '%physics%' -->
