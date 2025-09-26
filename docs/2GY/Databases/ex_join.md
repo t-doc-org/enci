@@ -4,7 +4,7 @@ Si vous ne l'avez pas déjà, téléchargez la [base de données](university.db)
 
 ```{role} input(quiz-input)
 :right: width: 18rem;
-:check: remove-whitespace lowercase
+:check: lowercase
 ```
 
 ```{quiz}
