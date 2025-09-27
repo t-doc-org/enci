@@ -8,6 +8,13 @@ solutions: dynamic
 
 Téléchargez la [base de données](university_pk_fk.db) d'une université et ouvrez la avec DB Browser for SQLite. En utilisant des requêtes SELECT ... FROM ... WHERE ... répondez aux questions suivantes.
 
+```{image} images/university_schema.png
+:width: 50%
+:alt: Schéma relationnel de la base de données des films
+:align: center
+```
+
+
 ```{role} input(quiz-input)
 :right: width: 18rem; clear: right;
 :check: split lowercase
