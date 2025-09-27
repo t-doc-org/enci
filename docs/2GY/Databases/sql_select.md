@@ -245,13 +245,13 @@ Comme en Python, il est possible de chaîner plusieurs conditions avec les opér
 SELECT titre FROM Livre WHERE auteur = 'Alexandre Dumas' OR Auteur = 'Gustave Flaubert'
 ```
 
-La requête suivante permet d'afficher toutes les infos des livres écrits par J.K. Rowling après 2003.
+La requête suivante permet d'afficher toutes les infos des livres écrits par J.K. Rowling après 2003. Ici, les dates sont exprimées sous forme textuelle, c'est pourquoi nous avons toujours besoin des guillemets simples.
 
 ```{exec} sql
 :after: sql-create-insert-all
 :name: sql-livre-select7
 :editor:
-SELECT titre FROM Livre WHERE auteur = 'J.K. Rowling' AND date_pub > 2003
+SELECT titre, date_pub FROM Livre WHERE auteur = 'J.K. Rowling' AND date_pub > '2003-01-01'
 ```
 
 ### Opérateur `LIKE`
@@ -279,49 +279,33 @@ Le mot-clef `LIKE` peut s'utiliser comme un opérateur de comparaison sur du tex
     :editor:
     SELECT * FROM Livre WHERE titre LIKE '%le%'
     ```
+### COUNT(*)
 
+La fonction `count(*)` peut être utilisée dans n'importe quelle requête pour afficher le nombre de résultats au lieu du contenu des colonnes sélectionnées. Lorsque nous utilisons count, nous pouvons utiliser une étoile et n'avons pas besoin de penser aux colonnes que nous sélectionnons. Nous pouvons reprendre n'importe lequel des exemples de requêtes précédents et les exécuter, mais cette fois-ci, cela ne nous montrera que le nombre de résultats correspondant aux critères donnés dans une requête.
 
+ - Par exemple, pour trouver le nombre des livres dont le titre commence par "Harry". (Pour cela, il faut ajouter le signe `%` (qui peut être compris par "n'importe quel texte") après la valeur commençant le mot.) 
+    ```{exec} sql
+    :after: sql-create-insert-all
+    :name: sql-livre-count1
+    :editor:
+    SELECT count(*) FROM Livre WHERE titre LIKE 'Harry%'
+    ```
+- La requête suivante permet d'afficher toutes les infos des livres écrits par J.K. Rowling après 2003. Ici, les dates sont exprimées sous forme textuelle, c'est pourquoi nous avons toujours besoin des guillemets simples.
 
-### Joindre plusieurs tables
-Les requêtes `SELECT` précédentes ont permis de rechercher des informations dans une seule table à la fois. Si toutefois on souhaite rechercher tous les titres de livres qu'un certain utilisateur a emprunté, les trois tables devront être mises à contribution dans la même requête.
+    ```{exec} sql
+    :after: sql-create-insert-all
+    :name: sql-livre-count2
+    :editor:
+    SELECT count(*) FROM Livre WHERE auteur = 'J.K. Rowling' AND date_pub > '2003-01-01'
+    ```
+- Nous pouvons également compter tous les livres.
 
-Pour joindre deux tables entre elles, on utilise `JOIN ... ON ...` dans une requête `SELECT`. On fait suivre le `JOIN` de la table à rajouter à la requête, et le `ON` des champs qui permettent de lier ces deux tables, avec un signe d'égalité. Ces deux champs sont simplement la clef étrangère et la clef primaire référencée. Par exemple, la requête suivante me permet de lier la table des Utilisateurs avec la table des Emprunts. 
-
-```{exec} sql
-:after: sql-create-insert-all
-:name: sql-join1
-:editor:
-SELECT *
-FROM Utilisateur
-JOIN Emprunt ON Emprunt.utilisateur = Utilisateur.id_utilisateur
-```
-Comme vous pouvez le constater avec le résultat de cette requête, tous les emprunts de livre ont été collés à leur utilisateur.
-
-On peut utiliser autant de `JOIN` que souhaiter pour coller plusieurs tables ensemble. La requête suivante nous permet de coller les 3 tables ensemble :
-
-```{exec} sql
-:after: sql-create-insert-all
-:name: sql-join2
-:editor:
-SELECT *
-FROM Utilisateur
-JOIN Emprunt ON Emprunt.utilisateur = Utilisateur.id_utilisateur
-JOIN Livre ON Emprunt.livre = Livre.numero_isbn
-```
-
-Cette requête peut être simplement complétée par un `WHERE` et affinée après le `SELECT` pour trouver tous les noms de livres empruntés par l'utilisateur dont le prénom est *Catherine*
-
-```{exec} sql
-:after: sql-create-insert-all
-:name: sql-join3
-:editor:
-SELECT Livre.titre
-FROM Utilisateur
-JOIN Emprunt ON Emprunt.utilisateur = Utilisateur.id_utilisateur
-JOIN Livre ON Emprunt.livre = Livre.numero_isbn
-WHERE Utilisateur.prenom = 'Catherine'
-```
-
+    ```{exec} sql
+    :after: sql-create-insert-all
+    :name: sql-livre-count3
+    :editor:
+    SELECT count(*) FROM Livre
+    ```
 
 ## Exercices
 

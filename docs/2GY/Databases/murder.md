@@ -7,7 +7,7 @@ solutions: dynamic
 La base de données provient de [SQL Mysteries](https://github.com/NUKnightLab/sql-mysteries/tree/master), Joon Park & Cathy He CC- BY-SA 4.0
 Pour telecharger suivez: [sql-murder-mystery](https://github.com/NUKnightLab/sql-mysteries/blob/master/sql-murder-mystery.db)
 ```{image} images/download_murder_db.png
-:width: 100%
+:width: 50%
 :alt: Download sql-murder-mystery.db database
 :align: center
 ```

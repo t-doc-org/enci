@@ -217,7 +217,7 @@ JOIN Livre ON Emprunt.livre = Livre.numero_isbn
 WHERE Utilisateur.prenom = 'Catherine'
 ```
 
-
+<!-- 
 ## Exercices
 
-### Exercice {num1}`exercice`
+### Exercice {num1}`exercice`-->

@@ -25,3 +25,5 @@ Si vous ne l'avez pas déjà, téléchargez la [base de données](university.db)
     Quel est le nom du directeur de faculté, du cours auquel 'Feng' est
     inscrit ?
 ```
+
+Pour plus d'exercices, vous pouvez consulter la page de mon collègue : Maxime Jan [Joindre plusieurs tables, Exercices de Maxime Jan](https://janm.t-doc.org/DOI2/Databases/sql_join.html#exercices). (Notez qu'il s'agit d'un site web différent, commençant par « janm », donc une fois que vous avez terminé les exercices qui s'y trouvent, retournez sur le site commençant par « enci »).
