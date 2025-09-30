@@ -92,6 +92,7 @@ where cname = 'Relativity';
 select count(*) from student
 where YEAR = 'FR'
 and (major = 'PHY' or major = 'MA');
+
 --ou
 select count(*) from student
 where YEAR = 'FR'
@@ -103,7 +104,8 @@ select * from student
 where sname like 'Bly%';
 --Blythe Raskop
 --ici, nous ne mettons pas de % au début, 
---car nous recherchons des noms qui commencent par "Bly", nous n'attendons donc rien avant le texte "Bly", mais seulement après.
+--car nous recherchons des noms qui commencent par "Bly", 
+--nous n'attendons donc rien avant le texte "Bly", mais seulement après.
 
 --9
 select count(*) from enrolled
@@ -119,8 +121,10 @@ or fname like '%y%';
 select count(*) from student
 where age >=17 and age <=20
 and (year = 'FR' or year = 'SO');
---Ici, les parenthèses sont obligatoires pour respecter la logique demandée dans la question. Sans elles, nous sélectionnerions tous les élèves de la classe « SO », 
---sans tenir compte de leur âge.
+--Ici, les parenthèses sont obligatoires pour respecter la logique demandée 
+--dans la question. Sans elles, nous sélectionnerions tous les élèves 
+--de la classe 'SO', sans tenir compte de leur âge.
+
 --ou
 select count(*) from student
 where age >=17 and age <=20
