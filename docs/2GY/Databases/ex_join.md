@@ -1,3 +1,6 @@
+```{metadata}
+solutions: dynamic
+```
 # Exercices JOIN
 
 Si vous ne l'avez pas déjà, téléchargez la [base de données](university_pk_fk.db) d'une université et ouvrez la avec DB Browser for SQLite. En utilisant des requêtes SELECT ... FROM ... JOIN ... WHERE ... répondez aux questions suivantes.

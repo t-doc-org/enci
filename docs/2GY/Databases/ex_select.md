@@ -50,6 +50,7 @@ Téléchargez la [base de données](university_pk_fk.db) d'une université et ou
     ou « SO » ?
 ```
 
+
 ````{solution}
 ```{code-block} text
 :linenos:
