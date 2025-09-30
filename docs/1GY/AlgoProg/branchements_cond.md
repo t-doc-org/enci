@@ -582,14 +582,15 @@ Le prix final est 50.0 CHF
 :linenos:
 prix = float(input("Combien coûte l'article ?"))
 code = input("Quel est votre code de réduction ?")
+
 if code == "STX" and prix < 100:
-    prix *= 0.8
+    prix = prix * 0.8
 elif code == "STX" and prix > 200:
-    prix *= 0.65
+    prix = prix * 0.65
 elif code == "STX":
-    prix -= 20
+    prix = prix - 20
 elif code == "CSMI" or code == "CGAM":
-    prix += 10
+    prix = prix + 10
 print("Le prix final est", prix, "CHF")
 ```
 ````
