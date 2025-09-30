@@ -49,6 +49,87 @@ Téléchargez la [base de données](university_pk_fk.db) d'une université et ou
     Combien d’élèves ont entre 17 et 20 ans (y compris) et sont en années « FR »
     ou « SO » ?
 ```
+
+````{solution}
+```{code-block} text
+:linenos:
+--1
+select SNUM from student
+where sname like '%Daya%';
+--ou
+select SNUM from student
+where sname = 'Dayanis Oldehaver';
+--1504
+
+--2
+select room from course
+where cname = 'Database systems';
+--R102
+
+--3
+select count(*) from student
+where age >=23;
+--132
+
+--4
+select CNAME from course
+where room = 'R201';
+--Materials engineering
+--Engineering drawing
+
+--5
+select * from course
+where room = 'R403'
+and MEETS_AT = '14:00:00';
+--Condensed matter physics
+
+--6
+select count(*) from enrolled
+where cname = 'Relativity';
+--28
+
+--7
+select count(*) from student
+where YEAR = 'FR'
+and (major = 'PHY' or major = 'MA');
+--ou
+select count(*) from student
+where YEAR = 'FR'
+and major in ('PHY','MA');
+--36
+
+--8
+select * from student
+where sname like 'Bly%';
+--Blythe Raskop
+--ici, nous ne mettons pas de % au début, 
+--car nous recherchons des noms qui commencent par "Bly", nous n'attendons donc rien avant le texte "Bly", mais seulement après.
+
+--9
+select count(*) from enrolled
+where cname like '%engineering%';
+--186
+
+--10
+select count(*) from faculty
+where fname like '%x%'
+or fname like '%y%';
+
+--11
+select count(*) from student
+where age >=17 and age <=20
+and (year = 'FR' or year = 'SO');
+--Ici, les parenthèses sont obligatoires pour respecter la logique demandée dans la question. Sans elles, nous sélectionnerions tous les élèves de la classe « SO », 
+--sans tenir compte de leur âge.
+--ou
+select count(*) from student
+where age >=17 and age <=20
+and year in('FR','SO');
+--129
+```
+
+````
+
 <!-- pour 7 select count(*) from student
 join enrolled on student.SNUM = enrolled.SNUM
 where student.YEAR = 'FR'
