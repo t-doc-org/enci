@@ -13,7 +13,7 @@ Si vous ne l'avez pas déjà, téléchargez la [base de données](university_pk_
 
 ```{role} input(quiz-input)
 :right: width: 18rem;
-:check: lowercase
+:check: split lowercase
 ```
 
 ```{quiz}
