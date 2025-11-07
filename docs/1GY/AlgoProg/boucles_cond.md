@@ -328,3 +328,126 @@ while operation != "STOP":
 ```
 ````
 
+
+### Exercice {num1}`exercice`
+Partie 1 : Remplacement des multiples de 3 par "Fizz"
+
+Vous allez écrire un programme qui affiche les nombres de 1 à 13, en remplaçant les nombres divisibles par 3 par le mot "Fizz".
+
+Utilisez une boucle `while` pour parcourir les nombres de 1 à 13.
+Pour chaque nombre :
+
+-   Si le nombre est divisible par 3, affichez "Fizz".
+-   Sinon, affichez le nombre lui-même.
+
+Exemple de sortie attendue :
+```{code-block} text
+1
+2
+Fizz
+4
+5
+Fizz
+7
+8
+Fizz
+10
+11
+Fizz
+13
+```
+
+Partie 2 : Remplacement des multiples de 3 et 5
+Vous allez maintenant écrire un programme qui affiche les nombres de 1 à 14, en remplaçant :
+
+les nombres divisibles par 3 par "Fizz",
+les nombres divisibles par 5 par "Buzz".
+
+Consignes :
+
+Utilisez une boucle while pour parcourir les nombres de 1 à 14.
+Pour chaque nombre :
+
+Si le nombre est divisible par 3, affichez "Fizz".
+Si le nombre est divisible par 5, affichez "Buzz".
+Si le nombre n’est divisible ni par 3 ni par 5, affichez le nombre lui-même.
+
+
+
+Exemple de sortie attendue :
+```{code-block} text
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+```
+
+Partie 3:
+Affichez la séquence de nombres de 1 à 31, en appliquant des règles de remplacement spécifiques.
+Pour chaque nombre de 1 à 31 :
+
+-   Si le nombre est divisible par 3, affichez "Fizz" à la place du nombre.
+-   Si le nombre est divisible par 5, affichez "Buzz" à la place du nombre.
+-   Si le nombre est divisible à la fois par 3 et 5, affichez "FizzBuzz".
+-   Sinon, affichez simplement le nombre.
+
+Vous devez utiliser une boucle `while` et des instructions conditionnelles (if, elif, else).
+Affichez chaque résultat sur une ligne distincte.
+
+Exemple de sortie attendue:
+```{code-block} text
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+...
+FizzBuzz
+31
+```
+
+```{exec} python
+:editor: 0198a00d-f7e0-7b9e-b226-626e25d2dfb8
+#Ecrivez votre code ici
+
+```
+
+````{solution}
+
+```{exec} python
+:linenos:
+counter = 1
+while counter <=100:
+    if counter % 15 == 0:
+        print("FizzBuzz")
+    elif counter % 3 == 0:
+        print("Fizz")
+    elif counter % 5 == 0:
+        print("Buzz")
+    else:
+        print(counter)
+    counter = counter + 1
+
+```
+````
+
