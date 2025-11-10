@@ -54,6 +54,7 @@ while compteur <= 10 :
         print(compteur)
     compteur =compteur + 1
 ```
+
 Si nous voulons répéter une action toutes les trois fois, par exemple, nous pouvons procéder comme suit.
 ```{exec} python
 :linenos:
@@ -65,6 +66,86 @@ while compteur <= 10 :
         print(compteur)
     compteur =compteur + 1
 ```
+
+Pour les prochains exercices, nous utiliserons également le fait que si nous multiplions une valeur de chaîne par un nombre entier, cela répète la valeur de la chaîne autant de fois que la valeur entière.
+```{exec} python
+:linenos:
+text = "XO"
+n = 4
+print(text*n)
+```
+
+Les prochains exercices utiliseront le fait que nous pouvons multiplier des valeurs de chaîne, ainsi que l'idée de répéter quelque chose toutes les n fois.
+Vous pouvez prendre l'exemple suivant comme point de départ.
+
+```{exec} python
+:linenos:
+compteur = 1
+value = 5
+symbol = "+"
+while compteur <= 10 :
+    if compteur %2==0:
+        print(symbol * value)
+    else:
+        print(symbol * value * 2)
+    compteur =compteur + 1
+```
+
+Les consignes détaillés sont à venir, pour l'instant, considérez ce qui suit comme des exercices. À chaque fois, votre objectif est de produire l'affichage donné en utilisant une boucle while, certaines conditions à l'intérieur et certaines variables qui contiennent le nombre de certains aspects de votre « dessin ».
+
+```{code-block} text
+1
+□□□□□
+□□□□□
+□□□□□
+□□□□□
+□□□□□
+2
+□
+□□
+□□□
+□□□□
+□□□□□
+3
+□□□□□□□
+□□□□□□
+□□□□□
+□□□□
+□□□
+□□
+□
+4
+□□□□□□□
+ □□□□□□
+  □□□□□
+   □□□□
+    □□□
+     □□
+      □
+5
+▤▤▤▤▤
+▣▣▣▣▣
+▤▤▤▤▤
+▣▣▣▣▣
+▤▤▤▤▤
+6
++++++
+-----
++++++
+-----
++++++
+7
+/////////
+\\\\\\\\\
+|||||||||
+/////////
+\\\\\\\\\
+|||||||||
+/////////
+\\\\\\\\\
+|||||||||
+```
+
 
 ### Exercice {num1}`exercice`
 Partie 1 : Remplacement des multiples de 3 par "Fizz"
