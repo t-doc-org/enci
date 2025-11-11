@@ -273,6 +273,17 @@ while note != 99:
         nb_notes_insuf += 1
 print("Vous avez fait", nb_notes_insuf, "notes insuffisantes")
 ```
+ou
+```{exec} python
+:linenos:
+note = float(input("une note: "))
+nombre_note = 0
+while note !=99:
+    if note <4 and note >=1:
+        nombre_note = nombre_note + 1
+    note = float(input("une note: "))
+print("Les notes moin que 4 sont:",nombre_note)
+```
 ````
 
 ### Exercice {num1}`exercice`
