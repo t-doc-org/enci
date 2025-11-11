@@ -91,7 +91,38 @@ while compteur <= 10 :
     compteur =compteur + 1
 ```
 
-Les consignes détaillés sont à venir, pour l'instant, considérez ce qui suit comme des exercices. À chaque fois, votre objectif est de produire l'affichage donné en utilisant une boucle while, certaines conditions à l'intérieur et certaines variables qui contiennent le nombre de certains aspects de votre « dessin ».
+### Exercice {num1}`exercice`
+Il existe différents symboles permettant de réaliser ce qu'on appelle l'« art ASCII ». Plus tard dans l'année, nous aborderons la définition de l'ASCII et la manière dont les symboles sont représentés sous forme de codes sur un ordinateur.
+
+Voici une liste de différents symboles graphiques permettant de créer des motifs intéressants.
+■	Black Square	&#9632;	&#x25A0;
+□	White Square	&#9633;	&#x25A1;
+▢	White Square With Rounded Corners	&#9634;	&#x25A2;
+▣	White Square Containing Black Small Square	&#9635;	&#x25A3;
+▤	Square With Horizontal Fill	&#9636;	&#x25A4;
+▥	Square With Vertical Fill	&#9637;	&#x25A5;
+▦	Square With Orthogonal Crosshatch Fill	&#9638;	&#x25A6;
+▧	Square With Upper Left To Lower Right Fill	&#9639;	&#x25A7;
+▨	Square With Upper Right To Lower Left Fill	&#9640;	&#x25A8;
+▩	Square With Diagonal Crosshatch Fill	&#9641;	&#x25A9;
+▪	Black Small Square	&#9642;	&#x25AA;
+▫	White Small Square	&#9643;	&#x25AB;
+◧	Square With Left Half Black	&#9703;	&#x25E7;
+◨	Square With Right Half Black	&#9704;	&#x25E8;
+◩	Square With Upper Left Diagonal Half Black	&#9705;	&#x25E9;
+◪	Square With Lower Right Diagonal Half Black	&#9706;	&#x25EA;
+◫	White Square With Vertical Bisecting Line	&#9707;	&#x25EB;
+◰	White Square With Upper Left Quadrant	&#9712;	&#x25F0;
+◱	White Square With Lower Left Quadrant	&#9713;	&#x25F1;
+◲	White Square With Lower Right Quadrant	&#9714;	&#x25F2;
+
+Les motifs ci-dessous utilisent certains de ces symboles.
+
+Votre tâche consiste maintenant à observer chaque motif et à concevoir un programme comportant une boucle « while » qui le reproduise. Votre programme doit utiliser autant de variables et d'instructions conditionnelles que nécessaire, afin d'être clair, efficace et facile à lire.
+
+Observez attentivement les motifs : vous devrez parfois afficher un certain nombre de symboles, parfois faire attention au nombre d'espaces.
+
+
 
 ```{code-block} text
 1
@@ -123,17 +154,17 @@ Les consignes détaillés sont à venir, pour l'instant, considérez ce qui suit
      □□
       □
 5
-▤▤▤▤▤
-▣▣▣▣▣
-▤▤▤▤▤
-▣▣▣▣▣
-▤▤▤▤▤
++++++
+-----
++++++
+-----
++++++
 6
-+++++
------
-+++++
------
-+++++
+▤▤▤▤▤
+▣▣▣▣▣
+▤▤▤▤▤
+▣▣▣▣▣
+▤▤▤▤▤
 7
 /////////
 \\\\\\\\\
@@ -145,7 +176,73 @@ Les consignes détaillés sont à venir, pour l'instant, considérez ce qui suit
 \\\\\\\\\
 |||||||||
 ```
+```{exec} python
+:editor: 09821gya00d-f7e0-7b9e-b226-626e25d2dfb8
+#Ecrivez votre code ici
 
+```
+
+<!--  
+compteur = 1
+const = 5
+while compteur <= const:
+
+    #print("■"*const)
+    print("□"*const)
+    compteur += 1
+
+compteur = 1
+const = 5
+while compteur <= const:
+
+    #print("■"*const)
+    print("□"*const)
+    compteur += 1
+
+compteur = 7
+while compteur >= 1:
+
+    #print("■"*const)
+    print("□"*compteur)
+    compteur -= 1
+
+compteur = 7
+limit = compteur
+while compteur >= 1:
+
+    #print("■"*const)
+    print(" "*(limit-compteur)+"□"*compteur)
+    compteur -= 1
+
+compteur = 1
+const = 5
+while compteur <= const:
+    if compteur %2==1:
+        print("▤"*const)
+    else:
+        print("▣"*const)
+    compteur += 1
+
+compteur = 1
+const = 9
+while compteur <= const:
+    if compteur %3==1:
+        print("/"*const)
+    elif compteur % 3 == 2:
+        print("\\"*const)
+    else:
+        print("|"*const)
+    compteur += 1
+
+compteur = 1
+while compteur <= 10 :
+    if compteur %3==0:
+        print(compteur, "est divisible a 3")
+    else:
+        print(compteur)
+    compteur =compteur + 1
+
+-->
 
 ### Exercice {num1}`exercice`
 Partie 1 : Remplacement des multiples de 3 par "Fizz"
