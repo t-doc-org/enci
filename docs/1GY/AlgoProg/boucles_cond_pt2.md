@@ -95,26 +95,26 @@ while compteur <= 10 :
 Il existe différents symboles permettant de réaliser ce qu'on appelle l'« art ASCII ». Plus tard dans l'année, nous aborderons la définition de l'ASCII et la manière dont les symboles sont représentés sous forme de codes sur un ordinateur.
 
 Voici une liste de différents symboles graphiques permettant de créer des motifs intéressants.
-■	Black Square	&#9632;	&#x25A0;
-□	White Square	&#9633;	&#x25A1;
-▢	White Square With Rounded Corners	&#9634;	&#x25A2;
-▣	White Square Containing Black Small Square	&#9635;	&#x25A3;
-▤	Square With Horizontal Fill	&#9636;	&#x25A4;
-▥	Square With Vertical Fill	&#9637;	&#x25A5;
-▦	Square With Orthogonal Crosshatch Fill	&#9638;	&#x25A6;
-▧	Square With Upper Left To Lower Right Fill	&#9639;	&#x25A7;
-▨	Square With Upper Right To Lower Left Fill	&#9640;	&#x25A8;
-▩	Square With Diagonal Crosshatch Fill	&#9641;	&#x25A9;
-▪	Black Small Square	&#9642;	&#x25AA;
-▫	White Small Square	&#9643;	&#x25AB;
-◧	Square With Left Half Black	&#9703;	&#x25E7;
-◨	Square With Right Half Black	&#9704;	&#x25E8;
-◩	Square With Upper Left Diagonal Half Black	&#9705;	&#x25E9;
-◪	Square With Lower Right Diagonal Half Black	&#9706;	&#x25EA;
-◫	White Square With Vertical Bisecting Line	&#9707;	&#x25EB;
-◰	White Square With Upper Left Quadrant	&#9712;	&#x25F0;
-◱	White Square With Lower Left Quadrant	&#9713;	&#x25F1;
-◲	White Square With Lower Right Quadrant	&#9714;	&#x25F2;
+-  ■	Black Square	&#9632;	&#x25A0;
+-  □	White Square	&#9633;	&#x25A1;
+-  ▢	White Square With Rounded Corners	&#9634;	&#x25A2;
+-  ▣	White Square Containing Black Small Square	&#9635;	&#x25A3;
+-  ▤	Square With Horizontal Fill	&#9636;	&#x25A4;
+-  ▥	Square With Vertical Fill	&#9637;	&#x25A5;
+-  ▦	Square With Orthogonal Crosshatch Fill	&#9638;	&#x25A6;
+-  ▧	Square With Upper Left To Lower Right Fill	&#9639;	&#x25A7;
+-  ▨	Square With Upper Right To Lower Left Fill	&#9640;	&#x25A8;
+-  ▩	Square With Diagonal Crosshatch Fill	&#9641;	&#x25A9;
+-  ▪	Black Small Square	&#9642;	&#x25AA;
+-  ▫	White Small Square	&#9643;	&#x25AB;
+-  ◧	Square With Left Half Black	&#9703;	&#x25E7;
+-  ◨	Square With Right Half Black	&#9704;	&#x25E8;
+-  ◩	Square With Upper Left Diagonal Half Black	&#9705;	&#x25E9;
+-  ◪	Square With Lower Right Diagonal Half Black	&#9706;	&#x25EA;
+-  ◫	White Square With Vertical Bisecting Line	&#9707;	&#x25EB;
+-  ◰	White Square With Upper Left Quadrant	&#9712;	&#x25F0;
+-  ◱	White Square With Lower Left Quadrant	&#9713;	&#x25F1;
+-  ◲	White Square With Lower Right Quadrant	&#9714;	&#x25F2;
 
 Les motifs ci-dessous utilisent certains de ces symboles.
 
