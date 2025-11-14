@@ -190,6 +190,42 @@ Observez attentivement les motifs : vous devrez parfois afficher un certain nomb
        *****
        *****
        *****
+9
+        *
+       ***
+      *****
+     *******
+    *********
+   ***********
+  *************
+ ***************
+      ****
+      ****
+      ****
+      ****
+                  *
+                 ***
+                *****
+               *******
+              *********
+             ***********
+            *************
+           ***************
+          *****************
+         *******************
+        *********************
+       ***********************
+      *************************
+     ***************************
+    *****************************
+   *******************************
+  *********************************
+ ***********************************
+*************************************
+               ******
+               ******
+               ******
+               ******
 ```
 ```{exec} python
 :editor: 09821gya00d-f7e0-7b9e-b226-626e25d2dfb8
@@ -272,6 +308,38 @@ trunk = 5
 while  c <=3:
     print(" "*(int)((asc-trunk)+2)+"*"*trunk)
     c+=1
+
+
+compteur = 8
+limit = 16
+asc = 0
+while compteur >= 1:
+
+    #print("■"*const)
+    print(" "*(int)(limit/2-asc)+"*"*((asc+1)*2-1))
+    compteur -= 1
+    asc +=1
+c = 0
+trunk = 4
+while  c <=3:
+    print(" "*(int)((asc-trunk)+2)+"*"*trunk)
+    c+=1
+    
+compteur = 19
+limit = 36
+asc = 0
+while compteur >= 1:
+
+    #print("■"*const)
+    print(" "*(int)(limit/2-asc)+"*"*((asc+1)*2-1))
+    compteur -= 1
+    asc +=1
+c = 0
+trunk = 6
+while  c <=3:
+    print(" "*(int)((asc-trunk)+2)+"*"*trunk)
+    c+=1
+
 -->
 
 ### Exercice {num1}`exercice`
