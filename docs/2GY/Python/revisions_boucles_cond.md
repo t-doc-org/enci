@@ -1,5 +1,5 @@
 ```{metadata}
-solutions: show
+solutions: dynamic
 ```
 # Révisions - Boucles conditionnelles
 ```{youtube} 0_gtEj-HR24
