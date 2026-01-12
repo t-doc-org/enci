@@ -5,6 +5,6 @@
 ```{toctree}
 :maxdepth: 1
 Databases/index
-AppWeb/index
 Python/index
+AppWeb/index
 ```
