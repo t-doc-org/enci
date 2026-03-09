@@ -11,5 +11,5 @@ language = 'fr'
 myst_links_external_new_tab = True
 
 html_theme_options = {
-    # 'repository_url': 'https://github.com/t-doc-org/enci',
+    'repository_url': 'https://github.com/t-doc-org/enci',
 }
