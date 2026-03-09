@@ -437,6 +437,7 @@ FizzBuzz
 ...
 FizzBuzz
 31
+32
 ```
 
 ```{exec} python
