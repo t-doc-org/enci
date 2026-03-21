@@ -1,10 +1,6 @@
 <!-- Adapted from Maxime Jan <maxime.jan@edufr.ch> -->
 <!-- SPDX-License-Identifier: CC-BY-NC-SA-4.0 -->
 
-```{metadata}
-solutions: dynamic
-```
-
 # Variables
 
 ## Qu'est-ce qu'une variable ?

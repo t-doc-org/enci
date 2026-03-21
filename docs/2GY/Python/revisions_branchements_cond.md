@@ -1,6 +1,3 @@
-```{metadata}
-solutions: dynamic
-```
 # Révisions - Branchements conditionnels
 ```{youtube} FKuAnm_WXlg
 ```

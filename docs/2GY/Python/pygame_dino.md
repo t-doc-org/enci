@@ -1,12 +1,10 @@
 ```{metadata}
-solutions: dynamic
 exec:
   python:
     packages: [numpy, pygame-ce]
     files:
       cactus.png:
       t-rex.png:
-
 
 versions:
   pyodide: 0.27.7

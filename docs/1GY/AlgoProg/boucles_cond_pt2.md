@@ -1,6 +1,3 @@
-```{metadata}
-solutions: dynamic
-```
 # Boucles conditionnelles Pt.2
 
 ## Répéter quelque chose une fois sur deux (une fois sur trois, une fois sur n) en boucle

@@ -1,6 +1,3 @@
-```{metadata}
-solutions: dynamic
-```
 # Représentation des caractères
 
 En informatique, les caractères (lettres, signes de ponctuation, ...) sont représentés grâce à un tableau de correspondance. Au fil des années, plusieurs de ces tableaux ont été créés pour représenter différents jeux de caractères. Certains de ces tableaux sont aujourd'hui tombés dans l'oubli, alors que d'autres sont devenus des standards utilisés par la plupart de nos systèmes modernes.

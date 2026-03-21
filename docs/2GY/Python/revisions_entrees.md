@@ -1,11 +1,7 @@
-```{metadata}
-solutions: dynamic
-```
 # Révisions - Entrées utilisateur
 
 ```{youtube} fnV53iHgp_c
 ```
-
 
 ## Qu'est-ce qu'une entrée utilisateur ?
 
