@@ -65,16 +65,16 @@ $$
 ### Exercice 1
 
 <script type="module">
-const [core, quiz] = await tdoc.imports('tdoc/core.js', 'tdoc/quiz.js');
+const [core, quiz] = await tdoc.import('tdoc/core.js', 'tdoc/quiz.js');
 
 function conversion(fromRadix, toRadix, min, max) {
     return () => {
         const v = core.randomInt(min, max);
         const solution = core.toRadix(v, toRadix);
-        if (tdoc.dev) console.log(solution);
+        if (tdoc.local) console.log(solution);
         return {
             v,
-            equal(other) { return v === other.v; },
+            equal(other) { return this.v === other.v; },
             history: (max - min + 1) / 2,
 
             value(ph) { ph.textContent = `${core.toRadix(v, fromRadix)}`; },
@@ -83,8 +83,8 @@ function conversion(fromRadix, toRadix, min, max) {
     };
 }
 
-quiz.generator('bin2dec', conversion(2, 10, 17, 511));
-quiz.generator('dec2bin', conversion(10, 2, 17, 511));
+quiz.generators.bin2dec = conversion(2, 10, 17, 511);
+quiz.generators.dec2bin = conversion(10, 2, 17, 511);
 </script>
 
 Convertissez le nombre binaire suivant en notation décimale. Répétez l'exercice au moins 3 fois pour vous assurer de la bonne compréhension de cette conversion.
