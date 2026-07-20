@@ -5,7 +5,6 @@
 
 ## Théorie et exercices
 ```{toctree}
-:maxdepth: 1
 introduction
 sql_create_insert
 sql_select
@@ -16,6 +15,5 @@ ex_join
 
 ## Pratique
 ```{toctree}
-:maxdepth: 1
 murder
 ```
