@@ -11,7 +11,7 @@ Dans le cours d'informatique de 1ère année, vous avez appris les bases des lan
 Pour commencer à créer une page Web dynamique, il est essentiel que vous vous rappeliez des langages HTML et CSS. La page Web ci-dessous contient les balises HTML essentielles et quelques propriétés CSS pratiques. Cliquez sur le bouton "Play" à côté de ce code pour voir le rendu de la page, puis faites les exercices en dessous.
 
 ```{exec} html
-:when: load
+:when: load click
 :editor: de04d58dc5ccc4b9671c3627fb8d626fe4a15810bc1fe3e724feea761965fb71
 :style: max-height: 30rem;
 <!DOCTYPE html>
@@ -74,7 +74,7 @@ Pour commencer à créer une page Web dynamique, il est essentiel que vous vous 
  Commençons par créer la page statique :
 
  ```{exec} html
-:when: load
+:when: load click
 :editor: e539a2f323302f80a10f029f795087cabe5b6814574b6dc13382a90fd614d091
 :style: max-height: 35rem;
 :output-style: height: 8rem
@@ -140,7 +140,7 @@ bouton.addEventListener("click", ajouter)
 Ce code peut maintenant être ajouté au bas de notre page HTML, dans une balise `<script>` :
 
  ```{exec} html
-:when: load
+:when: load click
 :editor: 6effc5f5355aac32d84b1a2f43564a693a97c6f095eb1bb860d1c4df2bd99b80
 :style: max-height: 35rem;
 :output-style: height: 8rem
