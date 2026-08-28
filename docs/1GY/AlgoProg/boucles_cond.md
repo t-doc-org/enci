@@ -45,7 +45,6 @@ while compteur <= 10 :
     compteur += 1
 ```
 
-
 ## Exercices
 
 ### Exercice {num1}`exercice`
