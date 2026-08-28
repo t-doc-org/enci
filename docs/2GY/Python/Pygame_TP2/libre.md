@@ -1,44 +1,37 @@
 ```{metadata}
 exec:
   python:
-    packages: [numpy, pygame-ce]
     files:
       pacman.png:
       apple.png:
       blinky.png:
-
-versions:
-  pyodide: 0.27.7
 ```
-
 
 ```{exec} python
 :name: setup
-:when: never
+:when:
 :class: hidden
-import io
-with redirect(stdout=io.StringIO()):
-    import tdoc.pygame
+import tdoc.pygame
 setup_canvas()
 ```
 
 ```{exec} python
 :name: pygame_start
-:when: never
+:when:
 :class: hidden
 :include: ../code/pygame_start.py
 ```
 
 ```{defaults} exec
+:env: main
 :after: setup pygame_start
 :style: max-height: 25rem;
 ```
 
 ```{exec} python
 :name: pygame_end
-:when: never
+:when:
 :class: hidden
-
 try:
     await main()
 finally:
@@ -47,7 +40,7 @@ finally:
 
 # Projet libre
 
-```{exec} python main
+```{exec} python
 :then: pygame_end
 :editor: e722f1e6-542a-4106-b297-6f9511754d02
 async def main():

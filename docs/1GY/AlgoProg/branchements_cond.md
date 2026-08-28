@@ -1,6 +1,3 @@
-```{metadata}
-solutions: dynamic
-```
 # Branchements conditionnels
 
 ## Qu'est-ce qu'un branchement conditionnel ?
@@ -251,7 +248,7 @@ Sans les exécuter, lisez attentivement les deux programmes ci-dessous. Leur seu
 
 ```{exec} python
 :caption: Programme 1
-:when: never
+:when:
 prenom = input("Quel est votre prénom ?")
 if prenom == "Maxime":
     print("Très joli prénom !")
@@ -263,7 +260,7 @@ print("A bientôt")
 
 ```{exec} python
 :caption: Programme 2
-:when: never
+:when:
 prenom = input("Quel est votre prénom ?")
 if prenom == "Maxime":
     print("Très joli prénom !")
