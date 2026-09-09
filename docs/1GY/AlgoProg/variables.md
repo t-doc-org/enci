@@ -39,7 +39,7 @@ En Python, les valeurs que l'on stocke dans les variables peuvent être de 4 typ
 | `int`   | integer   | Nombres entiers                  | `4`                  |
 | `float` | flottant  | Nombres à virgules               | `4.125`              |
 | `str`   | string    | Texte / Chaînes de caractères            | `"Bonjour"`          |
-| `bool`  | booléen   | Résultat d'un test: Vrai ou Faux | 2<1 renvoie `False`  |
+| `bool`  | booléen   | Résultat d'un test: Vrai ou Faux (`True` / `False`) | 2<1 renvoie `False`  |
 
 ```{important}
 - Pour séparer les unités des décimales, les flottants utilisent un **point**, et non une virgule
@@ -119,7 +119,7 @@ Les opérateurs d'affectation combinée permettent de modifier la valeur des var
 | :-------: | :-----: | :----------: |
 | `+=`        | `x += 6`  | `x = x + 6`    |
 | `-=`        | `x -= 6`  | `x = x - 6`    |
-| `*=`       | `x \*= 6` | `x = x * 6`    |
+| `*=`       | `x *= 6` | `x = x * 6`    |
 | `/=`        | `x /= 6`  | `x = x / 6`    |
 
 ## Exercices
@@ -151,7 +151,7 @@ De quel type sont les valeurs suivantes?
 ```
 ### Exercice {num1}`exercice`
 Ce code Python déclare 5 variables puis affiche leur contenu. Toutefois, ce programme contient une erreur par ligne.
-Trouvez ces erreurs et corrigez-les.
+Trouvez ces erreurs et corrigez-les. À la fin, grâce à l'instruction « print » à la ligne 6, le programme devrait afficher les valeurs des 5 variables déclarées ci-dessus.
 
 ```{exec} python
 :editor: 01987eac-6664-7a95-aa28-f73f9e4cc25a
@@ -224,18 +224,19 @@ y = z + x
 x = y - z / 2
 z = z * 2
 y = 5
+print(x,y,z)
 ```
 
 ````{solution}
-| x  | y  | z  |
-| :--| :--| :--|
-| 10 |    |    |
-| 10 | 2  |    |
-| 10 | 2  | 20 |
-| 10 | 30 | 20 |
-| 20 | 30 | 20 |
-| 20 | 30 | 40 |
-| 20 | 5  | 40 |
+|ligne| x  | y  | z  |
+|:--| :--| :--| :--|
+|1| 10 |    |    |
+|2| 10 | 2  |    |
+|3| 10 | 2  | 20 |
+|4| 10 | 30 | 20 |
+|5| 20 | 30 | 20 |
+|6| 20 | 30 | 40 |
+|7| 20 | 5  | 40 |
 
 ````
 
@@ -251,19 +252,20 @@ nombre_habitants = nombre_habitants - 100
 prix = prix + nombre_habitants * cout
 nombre_habitants = 400
 prix = prix + nombre_habitants * cout
+print(nombre_habitatnts, cout, prix)
 ```
 
 ````{solution}
-| nombre_habitants  | cout  | prix  |
-| :--| :--| :--|
-| 200 |    |    |
-| 200 | 100  |    |
-| 200 | 100  | 20000 |
-| 200 | 50 | 20000 |
-| 100 | 50 | 20000 |
-| 100 | 50 | 25000 |
-| 400 | 50  | 25000 |
-| 400 | 50  | 45000 |
+|ligne| nombre_habitants  | cout  | prix  |
+| :--| :--| :--| :--|
+|1| 200 |    |    |
+|2| 200 | 100  |    |
+|3| 200 | 100  | 20000 |
+|4| 200 | 50 | 20000 |
+|5| 100 | 50 | 20000 |
+|6| 100 | 50 | 25000 |
+|7| 400 | 50  | 25000 |
+|8| 400 | 50  | 45000 |
 
 ````
 
