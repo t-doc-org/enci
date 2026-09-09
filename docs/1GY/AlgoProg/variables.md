@@ -241,6 +241,33 @@ print(x,y,z)
 ````
 
 ### Exercice {num1}`exercice`
+Déterminez la valeur de chacune des variables de ce programme en créant un tableau d'états. (Consultez le chapitre « Opérateurs d'affectation combinés » ci-dessus.)
+
+```{exec} python
+x = 20
+y = 2 * x
+x += 2 * y
+z = x - y
+z -= y
+x /= z
+z *= x - 2
+print(x,y,z)
+```
+
+````{solution}
+|ligne| x  | y  | z  |
+|:--| :--| :--| :--|
+|1| 20 |    |    |
+|2| 20 | 40  |    |
+|3| 100 | 40  |   |
+|4| 100 | 40 | 60 |
+|5| 100 | 40 | 20 |
+|6| 5 | 40 | 20 |
+|7| 5 | 40  | 60 |
+
+````
+
+### Exercice {num1}`exercice`
 Déterminez la valeur de chacune des variables de ce programme en créant un tableau d'états.
 
 ```{exec} python
