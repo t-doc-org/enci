@@ -372,6 +372,7 @@ diamètre = 11
 rayon = diamètre / 2
 aire_disque = pi * rayon ** 2
 volume = aire_disque * hauteur
+print("Le volume est de", volume, "m3")
 ```
 ````
 
