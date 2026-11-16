@@ -50,6 +50,7 @@ Sans les exécuter, lisez attentivement les programmes ci-dessous. Leur seule di
 ```{exec} python
 :when:
 :caption: Programme 1
+:linenos:
 n = 5
 if n < 10:
     n += 1
@@ -59,6 +60,7 @@ if n < 10:
 ```{exec} python
 :when:
 :caption: Programme 2
+:linenos:
 n = 5
 while n < 10:
     n += 1
@@ -74,6 +76,7 @@ Comme le premier programme utilise un `if`, le bloc d'instruction indenté en de
 Etablissez le tableau d'état du programme suivant.
 
 ```{exec} python
+:linenos:
 x = 0
 y = 20
 while x < y:
@@ -85,25 +88,26 @@ x += 1
 ````{solution}
 Tableau d'état :
 
-| x  | y  |
-| :--| :--|
-| 0  |    |
-| 0  | 20 |
-| 0  | 20 |
-| 2  | 20 |
-| 2  | 16 |
-| 4  | 16 |
-| 4  | 8  |
-| 6  | 8  |
-| 6  | -4 |
-| 8  | -4 |
-| 9  | -4 |
+|ligne| x  | y  |
+|:--| :--| :--|
+|1| 0  |    |
+|2| 0  | 20 |
+|4| 0  | 20 |
+|5| 2  | 20 |
+|4| 2  | 16 |
+|5| 4  | 16 |
+|4| 4  | 8  |
+|5| 6  | 8  |
+|4| 6  | -4 |
+|5| 8  | -4 |
+|6| 9  | -4 |
 
 ````
 
 ### Exercice {num1}`exercice`
 Etablissez le tableau d'état du programme suivant.
 ```{exec} python
+:linenos:
 n = 30
 x = 0
 while n != 20:
@@ -117,25 +121,25 @@ while n != 20:
 
 
 ````{solution}
-| n  | x  |
-| :--| :--|
-| 30  |    |
-| 30  | 0 |
-| 28  | 0 |
-| 28  | -1 |
-| 28  | -2 |
-| 26  | -2 |
-| 26  | -3  |
-| 26  | -6  |
-| 24  | -6 |
-| 24  | -4 |
-| 24  | -8 |
-| 22  | -8 |
-| 22  | -6 |
-| 22  | -12 |
-| 20  | -12 |
-| 20  | -10 |
-| 20  | -20 |
+|ligne| n  | x  |
+|:--| :--| :--|
+|1| 30  |    |
+|2| 30  | 0 |
+|4| 28  | 0 |
+|8| 28  | -1 |
+|9| 28  | -2 |
+|4| 26  | -2 |
+|8| 26  | -3  |
+|9| 26  | -6  |
+|4| 24  | -6 |
+|6| 24  | -4 |
+|9| 24  | -8 |
+|4| 22  | -8 |
+|6| 22  | -6 |
+|9| 22  | -12 |
+|4| 20  | -12 |
+|6| 20  | -10 |
+|9| 20  | -20 |
 ````
 
 ### Exercice {num1}`exercice`
