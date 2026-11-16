@@ -272,17 +272,7 @@ SELECT * FROM Joueur
 Si votre code est correct, la requête `INSERT INTO` ci-dessous ne doit **PAS** fonctionner. Pourquoi est-ce le cas ? Si cette requête ajoute bel et bien un 1er joueur à cette table, retravaillez le référencement de la clef étrangère dans la création de table.
 
 ```{exec} sql
-:when:
-:class: hidden
-:name: pragma-CE
 :after: eleve-create-joueur
-PRAGMA foreign_keys = ON;
-```
-
-
-
-```{exec} sql
-:after: pragma-CE
 :then: select-joueur
 
 INSERT INTO Joueur(prénom, nom, numéro_maillot, equipe)
@@ -315,7 +305,7 @@ Ajoutez maintenant 3 nouveaux joueurs dans cette base de données.
 Grâce au `AUTOINCREMENT`, ces joueurs devraient avoir **automatiquement** les `id_joueur` 1, 2, 3.
  ```{exec} sql
 :editor: 01992e4a-8378-79be-a44a-551312f61caa
-:after: pragma-CE
+:after: eleve-create-joueur
 :then: select-joueur
 
 

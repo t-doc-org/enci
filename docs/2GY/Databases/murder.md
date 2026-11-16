@@ -22,20 +22,19 @@ Quand vous aurez trouvé le coupable, vérifiez votre solution en bas de la page
 :align: center
 ```
 
+{vspace}`1rem`
 
 ```{exec} sql
 :include: databases/sql-murder-mystery.sql
 :name: murder
 :when:
-:style: display: none;
-
+:class: hidden
 ```
 
 ```{exec} sql
 :editor: 360753b5-e4ec-48ea-bc14-9d74ec9aa883
 :after: murder
 :output-style: max-height: 30rem
-
 ```
 
 ```{role} input(quiz-input)
