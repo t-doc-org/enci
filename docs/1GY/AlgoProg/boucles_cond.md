@@ -245,8 +245,7 @@ while compteur < 10:
 
 
 ### Exercice {num1}`exercice`
-1.
-Écrivez un programme dans lequel l'utilisateur peut consécutivement entrer les notes qu'il a faites dans une branche. À la fin, le programme affichera le nombre de notes insuffisantes qui ont été entrées. Les notes invalides seront simplement ignorées. Pour terminer le programme, l'utilisateur entrera la note `99`. Un exemple d'exécution peut être le suivant.
+1.  Écrivez un programme dans lequel l'utilisateur peut consécutivement entrer les notes qu'il a faites dans une branche. À la fin, le programme affichera le nombre de notes insuffisantes qui ont été entrées. Les notes invalides seront simplement ignorées. Pour terminer le programme, l'utilisateur entrera la note `99`. Un exemple d'exécution peut être le suivant.
 
 ```{code-block} text
 Entrez une note : 4.5
@@ -286,8 +285,7 @@ while note !=99:
 print("Les notes moin que 4 sont:",nombre_note)
 ```
 ````
-2.Élaboration des exercices précédents
-À présent, nous souhaitons toujours compter les notes valides mais insuffisantes, mais nous aimerions également calculer et afficher leur moyenne à la fin. De plus, si une note valide est saisie et qu'elle est suffisante, nous affichons un petit message du type : « Bravo pour ta note suffisante ». Nous souhaitons également afficher un message adapté pour les saisies qui ne correspondent pas à des notes valides, par exemple : « Note non valide ». Et bien sûr, le programme cesse de demander d'autres notes lorsque l'utilisateur saisit 99. 
+2.  **Élaboration des exercices précédents:** À présent, nous souhaitons toujours compter les notes valides mais insuffisantes, mais nous aimerions également calculer et afficher leur moyenne à la fin. De plus, si une note valide est saisie et qu'elle est suffisante, nous affichons un petit message du type : « Bravo pour ta note suffisante ». Nous souhaitons également afficher un message adapté pour les saisies qui ne correspondent pas à des notes valides, par exemple : « Note non valide ». Et bien sûr, le programme cesse de demander d'autres notes lorsque l'utilisateur saisit 99. 
 À la fin, le programme affiche le nombre de notes insuffisantes (et valides) ainsi que leur moyenne. 
 **Ajoutez une condition à la fin** pour n'afficher la moyenne que si le nombre de notes insuffisantes (valides) est supérieur à 0, afin d'éviter une erreur de division par 0.
 
@@ -316,7 +314,7 @@ print("Nombre de notes insuffisantes",nb_notes_insuf)
 if nb_notes_insuf>0:
     print("Moyenne de notes insuffisantes", somme_insuf/nb_notes_insuf)
 ```
-
+````
 
 
 ### Exercice {num1}`exercice`
