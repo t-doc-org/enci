@@ -292,7 +292,7 @@ print("Les notes moin que 4 sont:",nombre_note)
 **Ajoutez une condition à la fin** pour n'afficher la moyenne que si le nombre de notes insuffisantes (valides) est supérieur à 0, afin d'éviter une erreur de division par 0.
 
 ```{exec} python
-:editor: 0198a00c-91d5-75cd-8043-0b2021e0ba04
+:editor: 0378a00c-91d5-75cd-8043-5z2051e0ba04
 #Ecrivez votre code ici
 
 ```
