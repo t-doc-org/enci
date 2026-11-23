@@ -245,6 +245,7 @@ while compteur < 10:
 
 
 ### Exercice {num1}`exercice`
+1.
 Écrivez un programme dans lequel l'utilisateur peut consécutivement entrer les notes qu'il a faites dans une branche. À la fin, le programme affichera le nombre de notes insuffisantes qui ont été entrées. Les notes invalides seront simplement ignorées. Pour terminer le programme, l'utilisateur entrera la note `99`. Un exemple d'exécution peut être le suivant.
 
 ```{code-block} text
@@ -285,6 +286,38 @@ while note !=99:
 print("Les notes moin que 4 sont:",nombre_note)
 ```
 ````
+2.Élaboration des exercices précédents
+À présent, nous souhaitons toujours compter les notes valides mais insuffisantes, mais nous aimerions également calculer et afficher leur moyenne à la fin. De plus, si une note valide est saisie et qu'elle est suffisante, nous affichons un petit message du type : « Bravo pour ta note suffisante ». Nous souhaitons également afficher un message adapté pour les saisies qui ne correspondent pas à des notes valides, par exemple : « Note non valide ». Et bien sûr, le programme cesse de demander d'autres notes lorsque l'utilisateur saisit 99. 
+À la fin, le programme affiche le nombre de notes insuffisantes (et valides) ainsi que leur moyenne. 
+**Ajoutez une condition à la fin** pour n'afficher la moyenne que si le nombre de notes insuffisantes (valides) est supérieur à 0, afin d'éviter une erreur de division par 0.
+
+```{exec} python
+:editor: 0198a00c-91d5-75cd-8043-0b2021e0ba04
+#Ecrivez votre code ici
+
+```
+````{solution}
+```{exec} python
+:linenos:
+note = float(input("Entrez une note différente de 99: "))
+nb_notes_insuf = 0
+somme_insuf = 0
+while note !=99:
+    if note >=1 and note < 4:
+        nb_notes_insuf = nb_notes_insuf + 1
+        somme_insuf = somme_insuf + note
+    elif note <=6 and note >= 4:
+        print("Bravo, mais ca compte pas.")
+    else:
+        print("Note pas valable.")
+    note = float(input("entrez une note differente que 99"))
+print("Nombre de notes insuffisantes",nb_notes_insuf)
+#pour éviter la division par 0
+if nb_notes_insuf>0:
+    print("Moyenne de notes insuffisantes", somme_insuf/nb_notes_insuf)
+```
+
+
 
 ### Exercice {num1}`exercice`
 Ecrivez un programme correspondant à une mini machine à calculer. Dans celle-ci, l'utilisateur pourra choisir de faire une addition, soustraction ou multiplication entre 2 nombres. Le programme demandera alors à l'utilisateur quel type d'opération il souhaite faire, avant de lui demander les 2 nombres à utiliser. Le programme demandera à l'utilisateur des opérations à faire en boucle, jusqu'à ce que celui-ci écrive "STOP". Un exemple d'utilisation est donné ci-dessous.
